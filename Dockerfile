@@ -4,7 +4,7 @@ ADD __main__.py /
 #RUN apt-get install -y python python-setuptools python-pip
 #COPY requirements.txt requirements.txt
 #RUN pip install -r requirements.txt
-RUN pip install MongoDB
+RUN pip install pymongo
 #RUN pip install _version
 COPY . .
 CMD [ "python", "./__main__.py" ]
