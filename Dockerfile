@@ -7,7 +7,6 @@ ADD __main__.py /
 RUN pip install pymongo
 RUN pip install requests
 RUN pip install argparse
-RUN pip install threading
 #RUN pip install _version
 COPY . .
 CMD [ "python", "./__main__.py" ]
